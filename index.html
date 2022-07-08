@@ -6,7 +6,7 @@
     </head>
     <body>
         <header>
-            <h1>devInc Dice Generator</h1>
+            <h1><a style="text-decoration: none;" onclick="toggleTestMode()" id="pageTitle">devInc Dice Generator</a></h1>
         </header>
         <div id="pageBody">
             <div id="dicePhoto" style="position: relative;">
@@ -18,7 +18,9 @@
                 <button class="dieSelectorButton" id="twelveSidedDieButton" onclick="selectButtonWithID('twelveSidedDieButton')">Twelve Sides</button>
                 <button class="dieSelectorButton" id="twentySidedDieButton" onclick="selectButtonWithID('twentySidedDieButton')">Twenty Sides</button>
             </div>
-            <button id="roll" onclick="rollDice()">Roll!</button>
+            <button id="roll" class="animateClick" onclick="rollDice()">Roll!</button>
+            <button onclick="testProgram()" class="testMode animateClick" style="margin-top: 20px">Test!</button>
+            <p id="testResult" class="testMode"></p>
         </div>
     </body>
     <script src="index.js"></script>

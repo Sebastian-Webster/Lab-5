@@ -44,7 +44,7 @@ button:hover {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-#roll:active {
+.animateClick:active {
     transform: scale(0.9);
 }
 .diceTextValue {
@@ -54,4 +54,11 @@ button:hover {
     font-size: 36pt;
     text-align: center;
     width: 50px;
+}
+.testMode {
+    opacity: 0;
+}
+#testResult {
+    margin-left: 10px;
+    margin-right: 10px;
 }
