@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>devInc Dice Generator</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <h1>devInc Dice Generator</h1>
+        </header>
+        <div id="pageBody">
+            <img src="diceImages/sixSides/6.png" id="dicePhoto" width="100px" height="100px">
+            <div id="diceSelector">
+                <h1>Choose what dice to roll:</h1>
+                <button class="dieSelectorButton selectedButton" id="sixSidedDieButton">Six Sides</button>
+                <button class="dieSelectorButton" id="tenSidedDieButton">Ten Sides</button>
+                <button class="dieSelectorButton" id="twelveSidedDieButton">Twelve Sides</button>
+                <button class="dieSelectorButton" id="twentySidedDieButton">Twenty Sides</button>
+            </div>
+            <button id="roll" onclick="rollDice()">Roll!</button>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
