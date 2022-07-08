@@ -42,3 +42,5 @@ function selectButtonWithID(ID) {
 
    document.getElementById(ID).classList.add('selectedButton')
 }
+
+module.exports = generateRandomNumber
