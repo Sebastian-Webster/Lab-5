@@ -9,13 +9,14 @@
             <h1>devInc Dice Generator</h1>
         </header>
         <div id="pageBody">
-            <img src="diceImages/sixSides/6.png" id="dicePhoto" width="100px" height="100px">
+            <div id="dicePhoto" style="position: relative;">
+                <img src="diceImages/sixSides/6.png" id="sixSidedDiePhoto" width="200px" height="200px">
+            </div>
             <div id="diceSelector">
                 <h1>Choose what dice to roll:</h1>
-                <button class="dieSelectorButton selectedButton" id="sixSidedDieButton">Six Sides</button>
-                <button class="dieSelectorButton" id="tenSidedDieButton">Ten Sides</button>
-                <button class="dieSelectorButton" id="twelveSidedDieButton">Twelve Sides</button>
-                <button class="dieSelectorButton" id="twentySidedDieButton">Twenty Sides</button>
+                <button class="dieSelectorButton selectedButton" id="sixSidedDieButton" onclick="selectButtonWithID('sixSidedDieButton')">Six Sides</button>
+                <button class="dieSelectorButton" id="twelveSidedDieButton" onclick="selectButtonWithID('twelveSidedDieButton')">Twelve Sides</button>
+                <button class="dieSelectorButton" id="twentySidedDieButton" onclick="selectButtonWithID('twentySidedDieButton')">Twenty Sides</button>
             </div>
             <button id="roll" onclick="rollDice()">Roll!</button>
         </div>
