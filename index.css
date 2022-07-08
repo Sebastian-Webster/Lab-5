@@ -44,6 +44,14 @@ button:hover {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-h1 {
+#roll:active {
+    transform: scale(0.9);
+}
+.diceTextValue {
+    position: absolute;
+    top: 50px;
+    right: 76px;
+    font-size: 36pt;
     text-align: center;
+    width: 50px;
 }
